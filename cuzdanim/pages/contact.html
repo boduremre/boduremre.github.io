@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="well well-sm">
-                <form class="form" action="https://boduremre.github.io/cuzdanim/pages/form.php" method="post">
+                <form class="form" name="contactForm" onsubmit="return send_form();"> method="post">
                     <fieldset>
                         <!-- Name input-->
                         <div class="form-group mb-2">
@@ -29,7 +29,7 @@
                         <!-- Form actions -->
                         <div class="form-group float-end">
                             <div class="col-md-12">
-                                <button type="submit" onclick="send_form()" class="btn btn-primary">Gönder</button>
+                                <button type="submit" class="btn btn-primary">Gönder</button>
                             </div>
                         </div>
                     </fieldset>
