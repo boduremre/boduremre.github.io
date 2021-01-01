@@ -68,6 +68,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
+
   <script type="text/javascript">
     var exampleModal = document.getElementById('exampleModal');
     exampleModal.addEventListener('show.bs.modal', function (event) {
@@ -82,7 +83,7 @@
       var modalTitle = exampleModal.querySelector('.modal-title');
       var modalBody = exampleModal.querySelector('.modal-body');
 
-      fetch(href/*, options */)
+      fetch(href)
         .then((response) => response.text())
         .then((html) => {
           modalTitle.textContent = title;
@@ -91,8 +92,6 @@
         .catch((error) => {
           console.warn(error);
         });
-
-
     });
   </script>
 </body>
